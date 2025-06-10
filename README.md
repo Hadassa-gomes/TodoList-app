@@ -1,26 +1,36 @@
-📱 TodoList App
+# 📱 TodoList App
+
 Um aplicativo móvel elegante e funcional para gerenciar suas tarefas diárias, desenvolvido com React Native e Expo.
 
-React NativeExpoJavaScript
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Expo](https://img.shields.io/badge/Expo-1B1F23?style=for-the-badge&logo=expo&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-📖 Sobre o Projeto
+## 📖 Sobre o Projeto
+
 O TodoList App é uma solução simples e intuitiva para organizar suas tarefas diárias. Com uma interface moderna e funcionalidades essenciais, você pode criar, visualizar e gerenciar suas tarefas de forma eficiente, tudo armazenado localmente no seu dispositivo.
 
-✨ Principais Funcionalidades
-📝 Criar Tarefas: Adicione novas tarefas com título e descrição
-📋 Listar Tarefas: Visualize todas as suas tarefas organizadas
-👁️ Visualizar Detalhes: Acesse informações completas de cada tarefa
-✅ Marcar como Concluída: Altere o status das tarefas facilmente
-💾 Armazenamento Local: Suas tarefas ficam salvas no dispositivo
-🔄 Sincronização: Dados persistem entre sessões do app
-📱 Interface Responsiva: Design adaptado para diferentes telas
-🛠️ Tecnologias Utilizadas
-React Native - Framework para desenvolvimento mobile multiplataforma
-Expo - Plataforma que facilita o desenvolvimento React Native
-AsyncStorage - Solução de armazenamento local persistente
-React Navigation - Sistema de navegação entre telas
-JavaScript ES6+ - Linguagem de programação moderna
-📁 Estrutura do Projeto
+### ✨ Principais Funcionalidades
+
+- 📝 **Criar Tarefas**: Adicione novas tarefas com título e descrição
+- 📋 **Listar Tarefas**: Visualize todas as suas tarefas organizadas
+- 👁️ **Visualizar Detalhes**: Acesse informações completas de cada tarefa
+- ✅ **Marcar como Concluída**: Altere o status das tarefas facilmente
+- 💾 **Armazenamento Local**: Suas tarefas ficam salvas no dispositivo
+- 🔄 **Sincronização**: Dados persistem entre sessões do app
+- 📱 **Interface Responsiva**: Design adaptado para diferentes telas
+
+## 🛠️ Tecnologias Utilizadas
+
+- **React Native** - Framework para desenvolvimento mobile multiplataforma
+- **Expo** - Plataforma que facilita o desenvolvimento React Native
+- **AsyncStorage** - Solução de armazenamento local persistente
+- **React Navigation** - Sistema de navegação entre telas
+- **JavaScript ES6+** - Linguagem de programação moderna
+
+## 📁 Estrutura do Projeto
+
+```
 TodoList-App/
 ├── 📁 Api/
 │   └── 📄 tasks.js              # Gerenciamento de dados das tarefas
@@ -40,34 +50,53 @@ TodoList-App/
 ├── 📄 index.js                  # Ponto de entrada da aplicação
 ├── 📄 package.json              # Dependências e scripts
 └── 📄 README.md                 # Documentação do projeto
-🚀 Instalação e Configuração
-📋 Pré-requisitos
+```
+
+## 🚀 Instalação e Configuração
+
+### 📋 Pré-requisitos
+
 Antes de começar, certifique-se de ter instalado:
 
-Node.js (versão 16 ou superior)
-npm ou yarn
-Expo CLI (npm install -g @expo/cli)
-Expo Go (app no celular) ou simulador iOS/Android
-🔧 Passo a Passo
-Clone o repositório
+- **Node.js** (versão 16 ou superior)
+- **npm** ou **yarn**
+- **Expo CLI** (`npm install -g @expo/cli`)
+- **Expo Go** (app no celular) ou simulador iOS/Android
 
-git clone https://github.com/seu-usuario/TodoList-app.git
-cd TodoList-app
-Instale as dependências principais
+### 🔧 Passo a Passo
 
-npm install
-Instale o AsyncStorage
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/seu-usuario/TodoList-app.git
+   cd TodoList-app
+   ```
 
-npx expo install @react-native-async-storage/async-storage
-Instale as dependências de navegação
+2. **Instale as dependências principais**
+   ```bash
+   npm install
+   ```
 
-npx expo install @react-navigation/native @react-navigation/stack
-npx expo install react-native-screens react-native-safe-area-context
-Inicie o projeto
+3. **Instale o AsyncStorage**
+   ```bash
+   npx expo install @react-native-async-storage/async-storage
+   ```
 
-npx expo start
-📱 Como Executar
-🖥️ Iniciando o Servidor de Desenvolvimento
+4. **Instale as dependências de navegação**
+   ```bash
+   npx expo install @react-navigation/native @react-navigation/stack
+   npx expo install react-native-screens react-native-safe-area-context
+   ```
+
+5. **Inicie o projeto**
+   ```bash
+   npx expo start
+   ```
+
+## 📱 Como Executar
+
+### 🖥️ Iniciando o Servidor de Desenvolvimento
+
+```bash
 # Iniciar normalmente
 npx expo start
 
@@ -76,24 +105,17 @@ npx expo start --clear
 
 # Iniciar com túnel (para dispositivos em redes diferentes)
 npx expo start --tunnel
-📲 Testando o Aplicativo
-Plataforma	Como Testar
-📱 Dispositivo Físico	Baixe o app "Expo Go" e escaneie o QR code
-🍎 iOS Simulator	Pressione i no terminal
-🤖 Android Emulator	Pressione a no terminal
-🌐 Navegador Web	Pressione w no terminal
-🎯 Funcionalidades Detalhadas
-📋 Tela Principal (TaskListScreen)
-Lista Completa: Exibe todas as tarefas cadastradas
-Contador Dinâmico: Mostra o número total de tarefas
-Estados Visuais: Indicadores de carregamento e erro
-Navegação Intuitiva: Toque na tarefa para ver detalhes
-Botão Flutuante: Acesso rápido para criar nova tarefa
-🔍 Tela de Detalhes (TaskDetailScreen)
-Informações Completas: Título, descrição e status
-Toggle de Status: Marcar/desmarcar como concluída
-Data de Criação: Quando a tarefa foi criada
-Navegação: Botão para voltar à lista
-👋 Tela de Boas-vindas (WelcomeScreen)
-Introdução: Apresentação do aplicativo
-Onboarding: Guia inicial para novos usuários
+```
+
+### 📲 Testando o Aplicativo
+
+| Plataforma | Como Testar |
+|------------|-------------|
+| **📱 Dispositivo Físico** | Baixe o app "Expo Go" e escaneie o QR code |
+| **🍎 iOS Simulator** | Pressione `i` no terminal |
+| **🤖 Android Emulator** | Pressione `a` no terminal |
+| **🌐 Navegador Web** | Pressione `w` no terminal |
+
+
+
+
